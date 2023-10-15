@@ -1,0 +1,86 @@
+/* Reset default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0; /* Light Gray Background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db; /* Blue Header Background */
+    color: #fff; /* White Text */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section {
+    background-color: #fff; /* White Card Background */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px #ddd;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+h2 {
+    color: #3498db; /* Blue Section Titles */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Header Animation */
+header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Card Hover Effect */
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px #3498db; /* Blue Shadow on Hover */
+}
+
+/* Contact Icons */
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Updated Contact Icon Colors */
+.contact-icon img {
+    filter: invert(39%) sepia(48%) saturate(309%) hue-rotate(189deg) brightness(91%) contrast(86%);
+}
